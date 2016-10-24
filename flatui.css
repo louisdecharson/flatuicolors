@@ -99,7 +99,13 @@ ul.dropdown-menu {
     padding-left: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
+    padding-right: 10px;
     text-align: bottom;
+}
+#subtitle:hover{
+    background-color:#1abb9b;
+    color: white;
+    text-decoration: none;
 }
 
 #copied {
@@ -111,6 +117,15 @@ ul.dropdown-menu {
     position:absolute;
     right:10%;
     top: 10px;
+}
+
+#footer {
+    text-align: center;
+    color: gray;
+}
+i {
+    vertical-align: text-bottom;
+    margin-bottom: -4px;
 }
 
 
@@ -232,13 +247,85 @@ ul.dropdown-menu {
     }
 }
 
-// Related simple non-responsive mixins
-.element {
-  @include float-xs-left;
+
+/* CSS - ICONS */
+
+.code.icon {
+  color: #000;
+  position: absolute;
+  margin-left: 3px;
+  margin-top: 6px;
 }
-.another-element {
-  @include float-xs-right;
+
+.code.icon:before {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-left: solid 1px currentColor;
+  border-top: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
+
+.code.icon:after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-bottom: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+
+.heart-solid.icon {
+  color: #000;
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 5px;
+  width: 9px;
+  height: 9px;
+  border-left: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.heart-solid.icon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -1px;
+  width: 8px;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+  border-top: solid 1px currentColor;
+  border-left: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+.heart-solid.icon:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 8px;
+  width: 5px;
+  height: 8px;
+  border-radius: 0 5px 5px 0;
+  border-top: solid 1px currentColor;
+  border-right: solid 1px currentColor;
+  border-bottom: solid 1px currentColor;
+  background-color: currentColor;
+}
+
+
+
+
 
 .container {
     width: 100% !important;
