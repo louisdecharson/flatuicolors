@@ -3,7 +3,7 @@ var body = document.body,
 
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-var heightBouton = Math.max(150,(height-48)/4).toString()+'px'; 
+var heightBouton = Math.max(100,(height-56)/4).toString()+'px'; 
 
 
 var format = "rgb";
