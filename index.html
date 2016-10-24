@@ -17,22 +17,24 @@
   <body>
  
     <!-- HEADER /-->
-   <div class="header">
-      <div id="h1">FLAT UI COLORS</div>
-      <a id="subtitle" href="http://flatuicolors.com/">inspired by flatuicolors.com</a>     
-      <div class="btn-group header">
-	<button type="button" class="btn btn-default dropdown-toggle menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	  CHOOSE FORMAT  <span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu">
-	  <li><a class="menu" >RGB - (255,255,255)</a></li>
-	  <li><a class="menu" >RGBA - (255,255,255,1)</a></li>
-	  <li><a class="menu" >HEX - #1234EF</a></li>
-	</ul>
+    <nav class="navbar navbar-light bg-faded" role="navigation">
+      <a id="h1" class="navbar-brand" href="#">FLAT UI COLORS</a>
+      <div class="navbar-nav">
+        <a class="nav nav-link navbar-text" id="subtitle" href="http://flatuicolors.com/">inspired by flatuicolors.com</a>
+        <div class="btn-group nav-item float-xs-center">
+	  <button type="button" class="nav-link btn btn-default dropdown-toggle menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    CHOOSE FORMAT  <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu">
+	    <li><a class="menu" >RGB - (255,255,255)</a></li>
+	    <li><a class="menu" >RGBA - (255,255,255,1)</a></li>
+	    <li><a class="menu" >HEX - #1234EF</a></li>
+	  </ul>
+        </div>
+        <div class="float-xs-right" id="copied">Copied !</div>
       </div>
-      <div id="copied">Copied !</div>
-    </div>
-   
+    </nav>
+  
    <!-- COLORS /-->
     <div class="container">
       <div class="row">

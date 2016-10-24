@@ -7,7 +7,7 @@
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-    height: 190px;
+    height: 150px;
     margin: 0 0 0 0;
     width: 100%;
     border-radius: 0 0 0 0;
@@ -45,6 +45,10 @@ a.menu:hover {
     text-decoration: none;
 }
 
+.dropdown-toggle {
+    margin-top: 4px;
+    color: gray !important;
+}
 
 ul.dropdown-menu {
     margin: 0 0 0 0;
@@ -53,8 +57,13 @@ ul.dropdown-menu {
     border-color: gray;
 
 }
+
 .btn-group { 
-    width: 70px;
+    position: absolute;
+    left: 45%;
+    width: 20%;
+    top: 0%;
+    margin-top: 6px;
 }
 
 .header {
@@ -62,7 +71,20 @@ ul.dropdown-menu {
     padding: 5 5 5 5;
 }
 
-/* COLORS */
+.navbar {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.navbar-brand {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.nav {
+    margin-top: 16px;
+}
+
+
+/* IDS */
 #h1 {
     font-size: 32px;
     font-weight: bold;
@@ -74,28 +96,21 @@ ul.dropdown-menu {
     font-style: oblique;
     color: gray;
     display: inline-block;
-    padding-left: 5px;
-}
-
- .btn-group { 
-    position: absolute;
-    left: 45%;
-    width: 20%;
-    top: 0%;
-    margin-top: 5px;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: bottom;
 }
 
 #copied {
-    position: absolute;
-    left: 70%;
-    top: 0%;
-    margin-top: 5px;
-    margin-top: 5px;
     color: rgb(34, 167, 240);
     text-align: center;
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     display: none;
+    position:absolute;
+    right:10%;
+    top: 10px;
 }
 
 
@@ -215,6 +230,14 @@ ul.dropdown-menu {
         width: 20%;
         float: left;
     }
+}
+
+// Related simple non-responsive mixins
+.element {
+  @include float-xs-left;
+}
+.another-element {
+  @include float-xs-right;
 }
 
 .container {

@@ -3,7 +3,7 @@ var body = document.body,
 
 var height = Math.max( body.scrollHeight, body.offsetHeight, 
                        html.clientHeight, html.scrollHeight, html.offsetHeight );
-var heightBouton = Math.max(190,(height-48)/4).toString()+'px'; 
+var heightBouton = Math.max(150,(height-48)/4).toString()+'px'; 
 
 
 var format = "rgb";
@@ -18,7 +18,7 @@ function getRGB(colorval) {
 
 function rgbToHex(r, g, b) {
         var rgb = b | (g << 8) | (r << 16);
-        return '#' + (0x1000000 + rgb).toString(16).slice(1)
+    return '#' + (0x1000000 + rgb).toString(16).slice(1);
  }
 
 function rgbtToRgba(r,g,b) {
@@ -40,7 +40,7 @@ $(function(){
 	    $('.bouton').each(function() {
 		var x = $(this).css('backgroundColor');
 		var color = getRGB(x);
-		var fcolor = rgbToHex(color[1], color[2], color[3])
+		var fcolor = rgbToHex(color[1], color[2], color[3]);
 		$(this).attr('data-clipboard-text',fcolor);		
 	    });
 	} else if ($(this).text() === "RGB - (255,255,255)") {
@@ -54,7 +54,7 @@ $(function(){
 	    $('.bouton').each(function() {
 		var x = $(this).css('backgroundColor');
 		var color = getRGB(x);
-		var fcolor = rgbtToRgba(color[1], color[2], color[3])
+		var fcolor = rgbtToRgba(color[1], color[2], color[3]);
 		$(this).attr('data-clipboard-text',fcolor);		
 	    });
 	}
