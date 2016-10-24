@@ -1,4 +1,3 @@
-
 var body = document.body,
     html = document.documentElement;
 
@@ -16,9 +15,11 @@ function getRGB(colorval) {
     return parts;
 }
 
+
 function rgbToHex(r, g, b) {
-    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
-}
+        var rgb = b | (g << 8) | (r << 16);
+        return '#' + (0x1000000 + rgb).toString(16).slice(1)
+ }
 
 function rgbtToRgba(r,g,b) {
     return 'rgba(' + r + ',' + g + ',' + b + ',1' +  ')' ;
